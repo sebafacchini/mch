@@ -91,7 +91,8 @@
                                     </ul>
                                 </div>
                                 <div class="book_btn d-none d-lg-block">
-                                    <a class="popup-with-form" href="#test-form">PRENOTA ORA</a>
+                                    <!-- <a class="popup-with-form" href="#test-form">PRENOTA ORA</a> -->
+                                    <a href="#request-form">PRENOTA ORA</a>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +104,8 @@
             </div>
             <!--SF new BOOK-NOW/WHATSAPP buttons right-centre page-->
             <div class="book_btn_right">
-                <a class="popup-with-form" href="#test-form">PRENOTA ORA</a>
+                <!-- <a class="popup-with-form" href="#test-form">PRENOTA ORA</a> -->
+                <a href="#request-form">PRENOTA ORA</a>
             </div>
             <div class="wtsp_btn_right">
             <a href="https://wa.me/message/GYQ5KFJUKUQXC1" target="blank">WHATSAPP</a>
@@ -216,7 +218,7 @@
     <div class="about_area"> <!--"about_area"-->
         <div class="container">
             <div class="row">
-                <div class="col-xl-5 col-lg-5">
+                <div class="col-xl-5">
                     <div class="about_info">
                         <div class="section_title mb-20px">
                             <span>La Casa</span>
@@ -234,7 +236,7 @@
                         <a href="#" class="line-button">Learn More</a>
                     </div>
                 </div>
-                <div class="col-xl-7 col-lg-7">
+                <div class="col-xl-7">
                     <div class="about_thumb d-flex">
                         <div class="img_1">
                             <img src="img/about/about_1_800.jpg" alt="">
@@ -409,10 +411,10 @@
     <!-- video_area_end -->
 
 <!-- GIARDINO about_area_start  -->
-    <div class="about_area">
+    <div class="about_area_2">
         <div class="container">
             <div class="row">
-                <div class="col-xl-5 col-lg-5">
+                <div class="col-xl-5">
                     <div class="about_info">
                         <div class="section_title mb-20px">
                             <span>Il Giardino</span>
@@ -421,12 +423,13 @@
                         </div>
                         <p>Suscipit libero pretium nullam potenti. Interdum, blandit phasellus consectetuer dolor ornare
                             dapibus enim ut tincidunt rhoncus tellus sollicitudin pede nam maecenas, dolor sem. Neque
-                            sollicitudin enim. Dapibus lorem feugiat facilisi faucibus et. Rhoncus.</p>
-                        <a href="#" class="line-button">Learn More</a>
+                            sollicitudin enim. Dapibus lorem feugiat facilisi faucibus et. Rhoncus.
+                        </p>
+                        <a href="#" class="line-button_2">Learn More</a>
                     </div>
                 </div>
-                <div class="col-xl-7 col-lg-7">
-                    <div class="about_thumb d-flex">
+                <div class="col-xl-7">
+                    <div class="about_thumb"><!-- d-flex -->
                         <!-- <div class="image-stack">
                             <div class="image-stack__item image-stack__item--top">
                                 <img src="img/about/giardino_2.jpg" alt="">
@@ -436,7 +439,7 @@
                             </div>
                         </div> -->
                         <div class="img_1">
-                            <img src="img/about/giardino_2.jpg" alt="">
+                            <img src="img/about/giardino_1.jpg" alt="">
                         </div>
                         <!-- <div class="img_2">
                             <img src="img/about/giardino_4.jpg" alt="">
@@ -450,7 +453,7 @@
 
 
 <!-- SF - START - BOOKING FORM area-->
-<div class="about_area">
+<div id="request-form" class="about_area">
   <section class="ftco-booking">
     <div class="container">
       <div class="row">
@@ -462,49 +465,58 @@
               </div>
               <form action="#" class="booking-form">
                 <div class="row">
-                  <div class="col-md d-flex py-md-4">
+                  <!-- <div class="col-md d-flex py-md-4"> -->
+                  <div class="col-xl d-flex py-xl-4">
                     <div class="form-group align-self-stretch d-flex align-items-end">
-                      <div class="wrap align-self-stretch py-3 px-4">
+                      <div class="wrap align-self-stretch py-3 px-4 br_r_2">
                         <label for="#">Check-in</label>
-                        <input type="text" class="form-control checkin_date" placeholder="Check-in date">
+                        <input id="datepicker" placeholder="Check in">
+                        <!-- <input type="text" class="form-control checkin_date" placeholder="Check-in date"> -->
                       </div>
                     </div>
                   </div>
-                  <div class="col-md d-flex py-md-4">
+                  <!-- <div class="col-md d-flex py-md-4"> -->
+                  <div class="col-xl d-flex py-xl-4">
                     <div class="form-group align-self-stretch d-flex align-items-end">
-                      <div class="wrap align-self-stretch py-3 px-4">
+                      <div class="wrap align-self-stretch py-3 px-4 br_r_2">
                         <label for="#">Check-out</label>
-                        <input type="text" class="form-control checkout_date" placeholder="Check-out date">
+                        <input id="datepicker2" placeholder="Check out">
+                        <!-- <input type="text" class="form-control checkout_date" placeholder="Check-out date"> -->
                       </div>
                     </div>
                   </div>
-                  <div class="col-md d-flex py-md-4">
+                  <!-- <div class="col-md d-flex py-md-4"> -->
+                  <div class="col-xl d-flex py-xl-4">
                     <div class="form-group align-self-stretch d-flex align-items-end">
-                      <div class="wrap align-self-stretch py-3 px-4">
-                        <label for="#">Apartment</label>
+                      <div class="wrap align-self-stretch py-3 px-4 br_r_2">
+                        <label for="#">Appartamento</label>
                         <div class="form-field">
                           <div class="select-wrap">
-                            <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                            <select name="" id="" class="form-control">
-                              <option value="">Profumo</option>
-                              <option value="">Ascolto</option>
-                              <option value="">Sguardo</option>
-                              <option value="">Sfioro</option>
-                              <option value="">Gusto</option>
-                            </select>
+                            <!-- <div class="icon"><span class="ion-ios-arrow-down"></span></div> -->
+                            <div class="icon"><span class="fa fa-caret-down" role="right-icon"></span></div>
+                              <select name="" id="" class="form-control">
+                                <option value="">Appartamento</option>
+                                <option value="">Profumo</option>
+                                <option value="">Ascolto</option>
+                                <option value="">Sguardo</option>
+                                <option value="">Sfioro</option>
+                                <option value="">Gusto</option>
+                              </select>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md d-flex py-md-4">
+                  <!-- <div class="col-md d-flex py-md-4"> -->
+                  <div class="col-xl d-flex py-xl-4">
                     <div class="form-group align-self-stretch d-flex align-items-end">
                       <div class="wrap align-self-stretch py-3 px-4">
-                        <label for="#">Guests</label>
+                        <label for="#">Ospiti</label>
                         <div class="form-field">
                           <div class="select-wrap">
-                            <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                            <div class="icon"><span class="fa fa-caret-down"></span></div>
                             <select name="" id="" class="form-control">
+                              <option value="">Numero ospiti</option>
                               <option value="">1 Person</option>
                               <option value="">2 People</option>
                               <option value="">3 People</option>
@@ -517,11 +529,27 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md d-flex">
+                  <!-- <div class="col-md d-flex">
                     <div class="form-group d-flex align-self-stretch">
-                      <a href="#" class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block"><span>Check Availability <small>Best Price Guaranteed!</small></span></a>
+                      <a href="#" class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block">
+                          <span>Richiedi offerta<small>Miglior prezzo garantito!</small></span>
+                      </a>
                     </div>
-                  </div>
+                  </div> -->
+                </div>
+                <!-- <div class="col-md d-flex py-md-4"> -->
+                <div class="row">
+                    <div class="col-xl-5"></div>
+                    <div class="col-xl-2  mg_t_50"><!-- d-flex py-xl-4 -->
+                      <div class="form-group d-flex align-self-stretch">
+                        <a href="#" class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block">
+                            <div>Richiedi offerta</div>
+                        </a>
+                        <!-- <span><small>Miglior prezzo garantito!</small></span> -->
+                      </div>
+                    </div>
+                    <div class="col-xl-5"></div>
+
                 </div>
               </form>
           </div>
@@ -695,7 +723,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- link that opens popup -->
 
     <!-- form itself end-->
-        <form id="test-form" class="white-popup-block mfp-hide">
+        <!-- <form id="test-form" class="white-popup-block mfp-hide">
                 <div class="popup_box ">
                         <div class="popup_inner">
                             <h3>Check Availability</h3>
@@ -739,8 +767,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                             </form>
                         </div>
                     </div>
-            </form>
+            </form> -->
     <!-- form itself end -->
+
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+
 
     <!-- JS here -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
@@ -770,6 +805,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/mail-script.js"></script>
 
     <script src="js/main.js"></script>
+    <!-- <script src="js/bootstrap-datepicker.js"></script> -->
     <script>
         $('#datepicker').datepicker({
             iconsLibrary: 'fontawesome',

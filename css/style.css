@@ -355,6 +355,34 @@ h3 {
 }
 /*SF - END - new line-button class*/
 
+/*SF - START - new line-button class*/
+.line-button_2 {
+    color: #abbec9;/*#919191;*/
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    position: relative;
+    padding-right: 5px;
+    padding-bottom: 2px;
+}
+.line-button_2::before {
+    position: absolute;
+    content: "";
+    background: #abbec9;/*#919191;*/
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+}
+.line-button_2:hover {
+    color: #cc9b85;/*#009DFF;*/
+}
+.line-button_2:hover::before {
+    background: #cc9b85;/*#009DFF;*/
+}
+/*SF - END - new line-button class*/
+
+
 .book_now {
     display: inline-block;
     font-size: 14px;
@@ -964,7 +992,7 @@ width: 260px;/*SF*/
 /*SF - START width container for sliders*/
 @media (min-width: 1200px) {
     .container {
-    	max-width: 80%; /*1140px;*/ /*defined in bootstrap*/
+    	max-width: 90%; /*1140px;*/ /*defined in bootstrap*/
       margin-top: 50px;
       margin-bottom: 50px;
     }
@@ -989,7 +1017,6 @@ width: 260px;/*SF*/
     	max-width: 700px; /*1140px;*/ /*defined in bootstrap*/
       /*padding: 0px 30px 0px 30px;*/
       margin-bottom: 25px;
-
     }
 }
 /*SF - END width container for slider*/
@@ -1033,7 +1060,13 @@ width: 260px;/*SF*/
     font-size: 16px;
 }
 }
-/*SF dimension about_area */
+
+
+.about_area .container .row .col-xl-12 .about_info { /*SF, specified only for 1 case - original only: .abount_info */
+    padding-left: 75px;/*200px;*/
+    padding-right: 75px;
+}
+/*SF dimension about_info */
 .about_area .container .row .col-xl-12 .about_info { /*SF, specified only for 1 case - original only: .abount_info */
     padding-left: 75px;/*200px;*/
     padding-right: 75px;
@@ -1163,11 +1196,164 @@ width: 260px;/*SF*/
     display: flex !important;
     justify-content: space-between;
     align-items: center;
+    /* padding: 1rem; */
+    overflow-x: auto;
+}
+}
+/*SF - END - stacked images will be located one under the other in mobile-view*/
+
+/*SF - START definition new class about_area_2 */
+.about_area_2 {
+    background-color: #ded8cd;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.about_area_2 .container .row .col-xl-5 .about_info {
+    padding-top: 50px;
+}
+.about_area_2 .section_title span { /*SF*/
+    color: #fff;/*#009DFF;*/
+    font-size: 14px;
+    font-weight: bold; /*400*/
+    margin-bottom: 15px;
+    display: block;
+}
+.about_area_2 .section_title h3 {
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 56px;
+    color: #abbec9;/*#58595b;*//*#1F1F1F;*/
+    margin-bottom: 2rem;
+}
+/*SF - added for slogan*/
+.about_area_2 .section_title h4 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #fff;/*#58595b;*//*#1F1F1F;*/
+    margin-top: 36px;
+}
+/*SF - end slogan*/
+
+@media (max-width: 767px) {
+    .about_area_2 .section_title h3 {
+    font-size: 30px;
+    line-height: 36px;
+}
+/*SF - added for slogan*/
+    .about_area_2 .section_title h4 {
+    font-size: 16px;
+    line-height: 28px;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .about_area_2 .section_title h3 {
+    font-size: 36px;
+    line-height: 42px;
+}
+}
+
+
+.about_area_2 .container .row .col-xl-12 .about_info { /*SF, specified only for 1 case - original only: .abount_info */
+    padding-left: 75px;/*200px;*/
+    padding-right: 75px;
+}
+
+.about_area_2 .about_info p {
+    font-size: 16px;
+    line-height: 28px;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 47px;
+}
+@media (max-width: 767px) {
+    .about_area_2 .about_info a {
+    margin-bottom: 30px;
+}
+}.about_area_2 .about_thumb {
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    justify-content: flex-end;
+    -ms-flex-pack: flex-end;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .about_area_2 .about_thumb {
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start;
+    -ms-flex-pack: flex-start;
+    margin-top: 30px;
+}
+}
+.about_area_2 .about_thumb img {
+    width: 100%;
+}
+.about_area_2 .about_thumb .img_2 {
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+
+
+/* @media (min-width: 768px) and (max-width: 991px) {
+    .about_area_2 .about_thumb2 {
+    margin-bottom: 30px;
+}
+} */
+.about_area_2 .about_thumb2 img {
+    width: 100%}
+.about_area_2 .about_thumb2 .img_2 {
+    margin-top: 40px;
+    margin-left: 10px;
+}
+@media /*(min-width: 768px) and */(max-width: 1199px) {
+  /* .about_area_2 .about_thumb2 img {
+      width: 100%}
+  .about_area_2 .about_thumb2 .img_2 {
+      margin-top: 40px;
+      margin-left: 10px;
+} */
+    .about_area_2 .about_thumb2 img {
+        width: 100%;
+        }
+    .about_area_2 .about_thumb2 .img_1 {
+        width: 100%;
+        min-width: 600px; /*SF - set min-width, so img will not get smaller on small devices*/
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .about_area_2 .about_thumb2 .img_2 {
+        width: 100%;
+        min-width: 600px; /*SF - set min-width, so img will not get smaller on small devices*/
+        margin-top: 0px;
+        margin-left: 0px;
+      }
+    .about_area_2 .about_thumb2 .img_1:not(:last-child) {
+        margin-right: 20px;
+    }
+    .about_area_2 .about_thumb2 .img_1:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+/*SF - START - stacked images will be located one under the other in mobile-view*/
+@media (max-width: 1199px) {
+.about_area_2 .d-flex {
+    /*display: inline-block !important;*/
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     overflow-x: auto;
 }
 }
 /*SF - END - stacked images will be located one under the other in mobile-view*/
+
+/*SF - START definition new class about_area_2 */
+
+
 
 /*SF - START - image-stack class - NOT USED*/
 .image-stack {
@@ -1843,31 +2029,69 @@ width: 260px;/*SF*/
 .gj-datepicker input {
     width: 100%;
     height: 50px;
-    border: 1px solid #ddd;
-    padding: 17px;
-    font-size: 12px;
-    color: #919191;
+    /*border: 1px solid #ddd;*/
+    /*padding: 17px;*/
+    font-size: 16px; /*12px;*/
+    color: #fff;
     margin-bottom: 20px;
 }
 .gj-datepicker-md [role="right-icon"] {
     position: absolute;
     right: 0px;
     top: 0px;
-    font-size: 14px;
-    color: #919191;
+    font-size: 16px;/*14px;*/
+    color: #fff; /*919191*/
     margin-right: 15px;
     top: 16px;
 }
+.gj-datepicker-md {
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: .04em;
+	line-height: 1;
+	color: #fff;
+	position: relative;
+}
+.gj-textbox-md { /*SF*/
+    border-bottom: 0px;
+    display: block;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    margin: 0;
+    background: transparent;
+    text-align: left;
+}
+
 .gj-picker-md {
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: .04em;
     line-height: 1;
-    color: rgba(0, 0, 0, 0.87);
+    color: #95a6b1;/*#58595b;*/
     padding: 10px;
     padding: 20px;
-    border: 1px solid #E0E0E0;
+    border: 1px solid #abbec9;
+}
+.gj-textbox-md:focus, .gj-textbox-md:active {
+    border-bottom: 0px;
+    outline: none;
+}
+.gj-picker-md table tr td.today div {
+	color: #cc9b85;
+  font-weight: bold;
+}
+.gj-picker-md table thead { /*SF - color font days in calendar request-form*/
+	color: #95a6b1;
+}
+.gj-picker-md table tr td.selected.gj-cursor-pointer div { /*SF color calendar request-form after selecting*/
+    color: #fff;
+    font-weight: bold;
+    background: #cc9b85;
+    border-radius: 50%;
 }
 .footer {
     background: #000;
@@ -4332,6 +4556,85 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     color: #fff; } */
 
+    .form-inline {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .form-inline .form-check {
+        width: 100%; }
+      @media (min-width: 576px) {
+        .form-inline label {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          margin-bottom: 0; }
+        .form-inline .form-group {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          margin-bottom: 0; }
+        .form-inline .form-control {
+          display: inline-block;
+          width: auto;
+          vertical-align: middle; }
+        .form-inline .form-control-plaintext {
+          display: inline-block; }
+        .form-inline .input-group,
+        .form-inline .custom-select {
+          width: auto; }
+        .form-inline .form-check {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          width: auto;
+          padding-left: 0; }
+        .form-inline .form-check-input {
+          position: relative;
+          -ms-flex-negative: 0;
+          flex-shrink: 0;
+          margin-top: 0;
+          margin-right: 0.25rem;
+          margin-left: 0; }
+        .form-inline .custom-control {
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+        .form-inline .custom-control-label {
+          margin-bottom: 0; } }
+
+
 .booking-form {
 width: 100%; }
 .booking-form .form-group {
@@ -4340,9 +4643,30 @@ width: 100%; }
     display: block;
     margin-bottom: 0;
     /*border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
-    border-right: 2px solid #ded8cd;
+    /* border-right: 2px solid #ded8cd; */
     /*background-color: transparent !important;*/
 }
+@media (min-width: 1200px) {
+.booking-form .form-group .br_r_2 {
+    border-right: 2px solid #ded8cd;
+}
+}
+@media (max-width: 1199px) {
+  .booking-form .form-group .br_r_2 {
+  height: 150px;
+}
+}
+@media (min-width: 1200px) {
+.booking-form .mg_t_50 {
+    margin-top: 50px;
+}
+}
+@media (max-width: 1199px) {
+  .booking-form .mg_t_50 {
+  margin-top: 50px;
+}
+}
+
 .booking-form .form-group label {
     /* display: block;
     text-align: center; */
@@ -4360,66 +4684,177 @@ width: 100%; }
     -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
     .booking-form .form-group .icon span {
-      color: black !important; }
+      color: #fff !important;
+    }
+.fa, .fa-caret-down [role="right-icon"] {
+  	/* position: absolute; */
+  	/* right: 0px;
+  	top: 0px; */
+  	font-size: 16px;
+  	color: #fff;
+  	/* margin-right: 15px; */
+  	/* top: 16px; */
+  }
   .booking-form .form-group .wrap {
     width: 100%;
     display: block; }
   .booking-form .form-group .select-wrap, .booking-form .form-group .input-wrap {
     position: relative; }
     .booking-form .form-group .select-wrap select, .booking-form .form-group .input-wrap select {
+      display: none;
       -webkit-appearance: none;
       -moz-appearance: none;
-      appearance: none; }
+      appearance: none;
+  }
   .booking-form .form-group .btn {
     width: 100%;
     display: block !important;
     position: relative; }
-    .booking-form .form-group .btn span {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      right: 0;
-      -webkit-transform: translateY(-50%);
+  .booking-form .form-group .btn div {
+      position: relative;
+      /* top: 50%; */
+      padding: 12px 26px;
+      /* left: 0;
+      right: 0; */
+      /* -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
+      transform: translateY(-50%); */
       text-transform: uppercase;
-      font-weight: 500; }
-      .booking-form .form-group .btn span small {
-        color: #ffae60 /*#b69100*/;
+      background: #CB9A83;/*#009DFF;*/
+      padding: 12px 26px;
+      font-size: 20px;
+      font-weight: 400;
+      border: 1px solid transparent;
+      color: #fff;
+      font-weight: bold;
+    }
+  .booking-form .form-group .btn div:hover {
+    background: #fff;
+    color: #CB9A83;/*#009DFF;*/
+    border: 1px solid #CB9A83; /*#009DFF;*/
+}
+
+      .booking-form .form-group .btn small {
+        color: #ded8cd; /*#b69100;*/
         display: block; }
-    .booking-form .form-group .btn:hover {
-      color: #ffae60 /*#b69100*/; }
       .booking-form .form-group .btn:hover small {
         color: #fff !important; }
-.booking-form .form-control {
+
+
+.booking-form .form-control { /*SF - request-form style*/
   border: none !important;
   height: 40px !important;
   padding-left: 0;
   padding-right: 0;
-  color: black !important;
+  color: #fff !important;
   font-size: 18px;
   border-radius: 0px;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  font-family: "Playfair Display", Arial, serif;
+  font-family: "Nunito Sans", sans-serif;
   background: transparent !important; }
   .booking-form .form-control::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    color: black; }
+    color: #cc9b85;
+    font-family: "Nunito Sans", sans-serif;
+  }
   .booking-form .form-control::-moz-placeholder {
     /* Firefox 19+ */
-    color: black; }
+    color: cc9b85;
+    font-family: "Nunito Sans", sans-serif;
+ }
   .booking-form .form-control:-ms-input-placeholder {
     /* IE 10+ */
-    color: black; }
+    color: cc9b85;
+    font-family: "Nunito Sans", sans-serif;
+}
   .booking-form .form-control:-moz-placeholder {
     /* Firefox 18- */
-    color: black; }
+    color: cc9b85;
+    font-family: "Nunito Sans", sans-serif;
+}
   .booking-form .form-control:focus, .booking-form .form-control:active {
-    border-color: #fff; }
+    color: #cc9b85;
+    /*border-color: #cc9b85; */
+  }
 .booking-form textarea.form-control {
   padding-top: 18px;
-  height: 58px !important; }
+  height: 58px !important;
+  background-color: #cc9b85}
 .booking-form textarea.form-control-2 {
   padding-top: 18px;
   height: inherit !important; }
+/* style the items (options), including the selected item: */
+  /* .select-items div,.select-selected {
+    color: #cc9b85;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  } */
+
+.about_area .booking-form .d-flex {
+  	display: flex !important;
+  	justify-content: space-between;
+  	align-items: center;
+  	overflow-x: visible;
+  }
+  .select-selected {
+    display block;
+  background-color: transparent;
+  padding-top: 10px;
+}
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  font-style: "Nunito Sans", sans-serif;
+  position: absolute;
+  content: "";
+  top: 16px;
+  right: 0px;
+  width: 0;
+  height: 0;
+  /* border: 6px solid transparent; */
+  /* border-color: #fff transparent transparent transparent; */
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div {
+  color: #95a6b1;
+  /* padding: 8px 16px; */
+  /* border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent; */
+  cursor: pointer;
+  padding: 5px;
+}
+.select-selected {
+  color: #fff;
+  /* padding: 8px 16px; */
+  /* border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent; */
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: #ded8cd;
+}
