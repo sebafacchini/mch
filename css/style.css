@@ -1021,6 +1021,49 @@ width: 260px;/*SF*/
 }
 /*SF - END width container for slider*/
 
+/*SF - START width container for booking-form*/
+.container_2 {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+@media (min-width: 1200px) {
+    .container_2 {
+    	max-width: 80%; /*1140px;*/ /*defined in bootstrap*/
+      margin-top: 50px;
+      margin-bottom: 50px;
+      width: 100%;
+      padding-right: 150px;
+    	padding-left: 150px;
+    	margin-right: auto;
+    	margin-left: auto;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container_2 {
+    	max-width: 860px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .container_2 {
+    	max-width: 700px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+}
+@media (max-width: 768px) {
+    .container_2 {
+    	max-width: 700px;
+      margin-bottom: 25px;
+    }
+}
+/*SF - END width container for booking-form*/
+
+
 .slider_area .single_slider .slider_text h3 {
     color: #ffffff;
     font-family: "Raleway", sans-serif;
@@ -1073,6 +1116,7 @@ width: 260px;/*SF*/
 }
 
 .about_area .container .row .col-xl-12 /*.about_info*/ { /*SF, specified only for 1 case - original only: .abount_info */
+    min-height: 800px;
     padding-top: 150px;/*200px;*/
     padding-bottom: 150px;
     margin-bottom: 50px;
@@ -1111,7 +1155,55 @@ width: 260px;/*SF*/
     background-size: 750px;
     background-repeat: no-repeat;
 }
-}.about_area .about_info p {
+}
+
+/*SF - Container style for booking form*/
+.about_area .container_2 .row .col-xl-12 /*.about_info*/ { /*SF, specified only for 1 case - original only: .abount_info */
+    min-height: 800px;
+    padding-top: 150px;/*200px;*/
+    padding-bottom: 150px;
+    margin-bottom: 50px;
+    background-image: url("../img/bg_cerchi_w.png");/*url("../img/logo_background.png");*/
+    background-position: center center;
+    background-size: 800px;
+    background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  .about_area .container_2 .row .col-xl-12 /*.about_info*/ { /*SF, specified only for 1 case - original only: .abount_info */
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #95a6b1; /*SF*/
+    background-image: url("../img/bg_cerchi_w.png");/*url("../img/logo_background.png");*/
+    background-position: center center;
+    background-size: 600px;
+    background-repeat: no-repeat;
+}
+}@media (min-width: 768px) and (max-width: 991px) {
+  .about_area .container_2 .row .col-xl-12 /*.about_info*/ { /*SF, specified only for 1 case - original only: .abount_info */
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #95a6b1; /*SF*/
+    background-image: url("../img/bg_cerchi_w.png");/*url("../img/logo_background.png");*/
+    background-position: center center;
+    background-size: 700px;
+    background-repeat: no-repeat;
+}
+}@media (min-width: 992px) and (max-width: 1200px) {
+  .about_area .container_2 .row .col-xl-12 /*.about_info*/ { /*SF, specified only for 1 case - original only: .abount_info */
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #95a6b1; /*SF*/
+    background-image: url("../img/bg_cerchi_w.png");/*url("../img/logo_background.png");*/
+    background-position: center center;
+    background-size: 750px;
+    background-repeat: no-repeat;
+}
+}
+
+
+
+
+.about_area .about_info p {
     font-size: 16px;
     line-height: 28px;
     font-size: 16px;
@@ -1146,6 +1238,8 @@ width: 260px;/*SF*/
     margin-top: 40px;
     margin-left: 10px;
 }
+
+
 
 
 
@@ -2039,7 +2133,7 @@ width: 260px;/*SF*/
     position: absolute;
     right: 0px;
     top: 0px;
-    font-size: 16px;/*14px;*/
+    font-size: 24px;/*14px;*/
     color: #fff; /*919191*/
     margin-right: 15px;
     top: 16px;
@@ -4566,7 +4660,7 @@ h1, h2, h3, h4, h5, h6 {
   /* @media (min-width: 768px) {
     .ftco-booking .container {
       margin-top: -260px; } } */
-  .ftco-booking .container div[class*=col-] {
+  .ftco-booking .container_2 div[class*=col-] {
     padding-right: 10px;
     padding-left: 10px; }
   /* .ftco-booking h3 {
@@ -4708,7 +4802,7 @@ width: 100%; }
   	/* position: absolute; */
   	/* right: 0px;
   	top: 0px; */
-  	font-size: 36px;/*16px;*/
+  	font-size: 24px;/*16px;*/
   	color: #fff;
   	/* margin-right: 15px; */
   	/* top: 16px; */
