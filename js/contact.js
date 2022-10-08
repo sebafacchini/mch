@@ -1,9 +1,9 @@
 $(document).ready(function(){
-    
+
     (function($) {
         "use strict";
 
-    
+
     jQuery.validator.addMethod('answercheck', function (value, element) {
         return this.optional(element) || /^\bcat\b$/.test(value)
     }, "type the correct answer -_-");
@@ -12,6 +12,22 @@ $(document).ready(function(){
     $(function() {
         $('#contactForm').validate({
             rules: {
+                // checkin: { /*SF*/
+                //     required: true,
+                //     minlength: 6
+                // },
+                // checkout: { /*SF*/
+                //     required: true,
+                //     minlength: 6
+                // },
+                // apartment: { /*SF*/
+                //     required: true,
+                //     minlength: 2
+                // },
+                // people: { /*SF*/
+                //     required: true,
+                //     minlength: 2
+                // },
                 name: {
                     required: true,
                     minlength: 2
@@ -34,6 +50,22 @@ $(document).ready(function(){
                 }
             },
             messages: {
+                // checkin: { /*SF*/
+                //     required: "Please indicate your preferred check-in date",
+                //     minlength: "Please indicate a date in format dd/MM/yyyy"
+                // },
+                // checkout: { /*SF*/
+                //     required: "Please indicate your preferred check-out date",
+                //     minlength: "Please indicate a date in format dd/MM/yyyy"
+                // },
+                // apartment: { /*SF*/
+                //     required: "Please indicate your preferred apartment",
+                //     minlength: "Please choose between the available options"
+                // },
+                // people: { /*SF*/
+                //     required: "Please indicate how many guests are expected",
+                //     minlength: "Please choose between the available options"
+                // },
                 name: {
                     required: "come on, you have a name, don't you?",
                     minlength: "your name must consist of at least 2 characters"
@@ -80,6 +112,6 @@ $(document).ready(function(){
             }
         })
     })
-        
+
  })(jQuery)
 })

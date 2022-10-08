@@ -443,6 +443,21 @@ window.addEventListener("scroll", reveal);
 // To check the scroll position on page load
 reveal();
 
+/*SF function for calendar entry on contact and booking forms*/
+		$('#datepicker').datepicker({
+				iconsLibrary: 'fontawesome',
+				icons: {
+				 rightIcon: '<span class="fa fa-caret-down"></span>'
+		 }
+		});
+		$('#datepicker2').datepicker({
+				iconsLibrary: 'fontawesome',
+				icons: {
+				 rightIcon: '<span class="fa fa-caret-down"></span>'
+		 }
+
+		});
+
 
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */

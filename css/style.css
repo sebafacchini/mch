@@ -2506,9 +2506,31 @@ width: 260px;/*SF*/
     font-weight: 600;
     margin-bottom: 20px;
 }
-.form-contact label {
+.form-contact .form-group label {
+    /* display: block;
+    text-align: center; */
+    font-weight: 600;
     font-size: 14px;
-}
+    color: #ded8cd;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+.form-contact .form-group .icon {
+    position: absolute;
+    top: 50% !important;
+    right: 0;
+    font-size: 14px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+.form-contact .form-group .icon span {
+      color: #fff !important;
+    }
+  .form-contact .form-group .wrap {
+      width: 100%;
+      display: block; }
+
+
+
 .form-contact .form-group {
     margin-bottom: 30px;
 }
@@ -2517,6 +2539,7 @@ width: 260px;/*SF*/
     border-radius: 0px;
     height: 48px;
     padding-left: 18px;
+    padding-top: 0.5rem;
     font-size: 16px; /*13px;*/
     background: transparent;
     border-radius: 0px;
@@ -2537,6 +2560,88 @@ width: 260px;/*SF*/
     border-radius: 0px;
     height: 100% !important;
 }
+.form-contact .form-group .select-wrap, .form-contact .form-group .input-wrap {
+  position: relative; }
+  .form-contact .form-group .select-wrap select, .form-contact .form-group .input-wrap select {
+    display: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.form-contact .form-control .select-selected {
+  color: #fff;
+  /* padding: 8px 16px; */
+  /* border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent; */
+  cursor: pointer;
+  padding-top: 0.25rem;
+}
+
+/******************SF - START custom checkbox ******************/
+
+
+.form-contact .form-group .checkbox { /*SF*/
+  display: inline-block;
+  height: 24px;
+  width: 10%;
+}
+
+/* On mouse-over, add a grey background color */
+/* input[type="checkbox"]{
+  background-color: #ded8cd !important;
+} */
+
+/* On mouse-over, add a grey background color */
+/* input[type="checkbox"]:hover {
+  background-color: #ded8cd !important;
+} */
+
+/* When the checkbox is checked, add a blue background */
+/* input[type="checkbox"]:checked  {
+  background-color: #cc9b85 !important;
+} */
+
+/* Create the checkmark/indicator (hidden when not checked) */
+/* .form-contact .checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+} */
+
+/* Style the checkmark/indicator */
+.form-contact .checkbox:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/******************SF - END custom checkbox ******************/
+
+/******************SF - START custom contact-form ******************/
+
+
+.form-contact .form-control p {
+  font-size: 14px;
+  color: #fff;
+}
+.form-contact .form-control a {
+  font-size: 14px;
+  color: #ded8cd;
+}
+.form-contact .form-control a:hover {
+  font-size: 14px;
+  color: #cc9b85;
+}
+
+/***************SF - END custom contact-form ******/
+
+
 .modal-message .modal-dialog {
     position: absolute;
     top: 36%;

@@ -184,32 +184,117 @@
                         <h2 class="contact-title">Contattaci</h2>
                     </div>
                     <div class="col-lg-8">
-                        <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                      <form action="https://formsubmit.co/sebastiano.facchini@gmail.com" class="form-contact contact_form" method="POST">
+                        <!-- <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate"> -->
+
                             <div class="row">
-                                <div class="col-12">
+                              <div class="col-sm-3">
+                                <div class="form-group align-self-stretch d-flex align-items-end">
+                                  <div class="wrap align-self-stretch">
+                                    <label for="#">Check-in</label>
+                                    <input id="datepicker" class="form-control" placeholder="Check in" name="checkin" id="checkin" type="text" required>
+                                    <!-- <input type="text" class="form-control checkin_date" placeholder="Check-in date"> -->
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- <div class="col-md d-flex py-md-4"> -->
+                              <div class="col-sm-3">
+                                <div class="form-group align-self-stretch align-items-end">
+                                  <div class="wrap align-self-stretch">
+                                    <label for="#">Check-out</label>
+                                    <input id="datepicker2" class="form-control" placeholder="Check out"  name="checkout" id="checkout" type="text" required>
+                                    <!-- <input type="text" class="form-control checkout_date" placeholder="Check-out date"> -->
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- <div class="col-md d-flex py-md-4"> -->
+                              <div class="col-sm-3">
+                                <div class="form-group align-self-stretch align-items-end">
+                                  <div class="wrap align-self-stretch">
+                                    <label for="#">Appartamento</label>
+                                    <div class="form-control">
+                                      <div class="select-wrap">
+                                        <!-- <div class="icon"><span class="ion-ios-arrow-down"></span></div> -->
+                                        <div class="icon"><span class="fa fa-caret-down" role="right-icon"></span></div>
+                                          <select name="" id="" class="form-control" name="apartment" id="apartment" type="text" required>
+                                            <option value="">Appartamento</option>
+                                            <option value="">Profumo</option>
+                                            <option value="">Ascolto</option>
+                                            <option value="">Sguardo</option>
+                                            <option value="">Sfioro</option>
+                                            <option value="">Gusto</option>
+                                          </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- <div class="col-md d-flex py-md-4"> -->
+                              <div class="col-sm-3">
+                                <div class="form-group">
+                                  <div class="wrap align-self-stretch">
+                                    <label for="#">Ospiti</label>
+                                    <div class="form-control">
+                                      <div class="select-wrap">
+                                        <div class="icon"><span class="fa fa-caret-down"></span></div>
+                                        <select name="" id="" class="form-control" name="people" id="people" type="text" required>
+                                          <option value="">Numero ospiti</option>
+                                          <option value="">1 Person</option>
+                                          <option value="">2 People</option>
+                                          <option value="">3 People</option>
+                                          <option value="">4 People</option>
+                                          <option value="">5 People</option>
+                                          <option value="">6 People</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+
+                                <div class="col-sm-6">
                                     <div class="form-group">
-                                        <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder=" Name"></textarea>
+                                        <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name" required>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <input class="form-control valid" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
+                                        <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email" required>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
+                                <!-- <div class="col-12">
                                     <div class="form-group">
-                                        <input class="form-control valid" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Email">
+                                        <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject" required>
                                     </div>
-                                </div>
+                                </div> -->
+                                <!-- text area-->
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject">
+                                        <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder="Enter Message" required></textarea>
                                     </div>
                                 </div>
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <p><input class="checkbox" name="privacy" id="privacy" type="checkbox" required>Privacy</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p><input class="checkbox" name="newsletter" id="newsletter" type="checkbox">Newsletter</p>
+                                    </div>
+                                </div>
+
+
                             </div>
+
+
+
+
                             <div class="form-group mt-3">
                                 <button type="submit" class="button button-contactForm boxed-btn">Invia</button>
                             </div>
+
+
+
                         </form>
                     </div>
                     <div class="col-lg-3 offset-lg-1">
@@ -414,7 +499,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="js/mail-script.js"></script>
 
         <script src="js/main.js"></script>
-        <script>
+        <!-- <script>
             $('#datepicker').datepicker({
                 iconsLibrary: 'fontawesome',
                 icons: {
@@ -428,7 +513,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
              }
 
             });
-        </script>
+        </script> -->
 
 
 
