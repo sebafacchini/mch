@@ -77,7 +77,7 @@ p {
     font-family: 'Nunito Sans',  sans-serif;/*font-family: 'Raleway',  sans-serif;*/
 }
 label {
-    color: #7e7e7e;
+    color: #fff;/*#7e7e7e;*/
     cursor: pointer;
     font-size: 14px;
     font-weight: 400;
@@ -227,25 +227,24 @@ h3 {
     margin-bottom: 20px;
 }
 .boxed-btn {
-    background: #fff;
-    color: #131313;
+    background: #cd9b85;
+    color: #fff !important; /*#009DFF*/
     display: inline-block;
-    padding: 18px 44px;
-        font-family: 'Nunito Sans',  sans-serif; /*font-family: "Raleway", sans-serif;*/
-    font-size: 14px;
-    font-weight: 400;
+    padding: 12px 48px;
+    font-family: 'Nunito Sans',  sans-serif; /*font-family: "Raleway", sans-serif;*/
+    font-size: 16px;
+    font-weight: bold;
     border: 0;
-    border: 1px solid #009DFF;
+    border: 2px solid transparent;/*#009DFF;*/
     letter-spacing: 3px;
     text-align: center;
-    color: #009DFF !important;
     text-transform: uppercase;
     cursor: pointer;
 }
 .boxed-btn:hover {
-    background: #009DFF;
-    color: #fff !important;
-    border: 1px solid #009DFF;
+    background: #fff;/*#009DFF;*/
+    color: #cd9b85 !important;
+    border: 2px solid #cd9b85;
 }
 .boxed-btn:focus {
     outline: none;
@@ -896,7 +895,7 @@ width: 260px;/*SF*/
     background: #fff;
     width: 200px;
     z-index: 2;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.02);*/ /*SF*/
     opacity: 0;
     visibility: hidden;
     text-align: left;
@@ -916,13 +915,13 @@ width: 260px;/*SF*/
     -o-transition: .3s;
     transition: .3s;
     display: block;
-    color: #000;
+    color: #8898a2;
 }
 .header-area .main-header-area .main-menu ul li .submenu li a::before {
     display: none;
 }
 .header-area .main-header-area .main-menu ul li .submenu li:hover a {
-    color: #000;
+    color: #cc9b85;
 }
 .header-area .main-header-area .main-menu ul li:hover>.submenu {
     opacity: 1;
@@ -2331,14 +2330,14 @@ width: 260px;/*SF*/
     background-image: url(../img/banner/bradcam2.png);
 }
 .breadcam_bg_2 {
-    background-image: url(../img/banner/bradcam3.png);
+    background-image: url(../img/banner/bradcam3.jpg);
 }
 .bradcam_area {
     padding: 170px;
     background-size: cover;
     background-position: center center;
     text-align: center;
-    padding: 269px 0 159px 0;
+    padding: 300px 0 300px 0;/*269px 0 159px 0;*/
 }
 @media (max-width: 767px) {
     .bradcam_area {
@@ -2477,21 +2476,31 @@ width: 260px;/*SF*/
     margin-right: 20px;
 }
 .contact-info__icon i, .contact-info__icon span {
-    color: #8f9195;
+    color: #ded8cd;/*#8f9195;*/
     font-size: 27px;
 }
 .contact-info .media-body h3 {
     font-size: 16px;
     margin-bottom: 0;
     font-size: 16px;
-    color: #2a2a2a;
+    color: #fff;
 }
 .contact-info .media-body h3 a:hover {
-    color: #ff5e13;
+    color: #cc9b85;
 }
 .contact-info .media-body p {
-    color: #8a8a8a;
+    color: #fff;
 }
+.contact-info .media-body {
+    color: #fff;
+}
+.contact-info .media-body a {
+    color: #ded8cd;
+}
+.contact-info .media-body a:hover {
+    color: #cd9b85;
+}
+
 .contact-title {
     font-size: 27px;
     font-weight: 600;
@@ -2504,20 +2513,25 @@ width: 260px;/*SF*/
     margin-bottom: 30px;
 }
 .form-contact .form-control {
-    border: 1px solid #e5e6e9;
+    border: 2px solid #ded8cd;/*#e5e6e9;*/
     border-radius: 0px;
     height: 48px;
     padding-left: 18px;
-    font-size: 13px;
+    font-size: 16px; /*13px;*/
     background: transparent;
+    border-radius: 0px;
+    color: #fff;
 }
 .form-contact .form-control:focus {
     outline: 0;
     box-shadow: none;
+    color: #fff; /*SF*/
+    border-color: #fff; /*SF*/
+    font-size: 16px;
 }
 .form-contact .form-control::placeholder {
     font-weight: 300;
-    color: #999999;
+    color: #ded8dc;/*#999999;*/
 }
 .form-contact textarea {
     border-radius: 0px;
@@ -3992,7 +4006,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #999999;
 }
 .blog_right_sidebar .search_widget .form-control:focus {
-    border-color: #f0e9ff;
+    border-color: #ded8cd;/*#f0e9ff;*/
     outline: 0;
     box-shadow: none;
 }
@@ -4990,4 +5004,11 @@ width: 100%; }
 .reveal.active{
   transform: translateY(0);
   opacity: 1;
+}
+
+
+/*SF openstreetmap styling */
+.contact-section .container .my-map  iframe {
+    width: 100%;
+    height: 600px;
 }
