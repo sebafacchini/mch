@@ -4941,6 +4941,7 @@ width: 100%; }
     /* width: 100%; */
     /* display: block !important;*/
     position: relative;
+    border-radius: 0px;
   }
   .booking-form .form-group .btn div {
       position: relative;
@@ -5113,7 +5114,14 @@ width: 100%; }
 
 
 /*SF openstreetmap styling */
-.contact-section .container .my-map  iframe {
+/* .contact-section .container .my-map  iframe {
     width: 100%;
     height: 600px;
+} */
+.contact-section .container .my-map {
+    display: block;
+    width: 100%;
+    height: 600px;
+    z-index: 0; /*set z-index to 0 to put the map below everything else on the page*/
+
 }

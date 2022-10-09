@@ -460,7 +460,9 @@
     <!-- about_area_end -->
 
 
-<!-- SF - START - BOOKING FORM area-->
+<!--************************** SF - START - BOOKING FORM area***************************-->
+
+
 <div id="request-form" class="about_area">
   <section class="ftco-booking">
     <div class="container_2">
@@ -471,14 +473,14 @@
                   <h3>Prenota ora
                   </h3>
               </div>
-              <form action="#" class="booking-form">
+              <form action="contact.html" class="booking-form" method="GET">
                 <div class="row">
                   <!-- <div class="col-md d-flex py-md-4"> -->
                   <div class="col-xl d-flex py-xl-4">
                     <div class="form-group align-self-stretch d-flex align-items-end">
                       <div class="wrap align-self-stretch py-3 px-4 br_r_2">
                         <label for="#">Check-in</label>
-                        <input id="datepicker" placeholder="Check in">
+                        <input id="datepicker" name="checkin" placeholder="Check in">
                         <!-- <input type="text" class="form-control checkin_date" placeholder="Check-in date"> -->
                       </div>
                     </div>
@@ -488,7 +490,7 @@
                     <div class="form-group align-self-stretch d-flex align-items-end">
                       <div class="wrap align-self-stretch py-3 px-4 br_r_2">
                         <label for="#">Check-out</label>
-                        <input id="datepicker2" placeholder="Check out">
+                        <input id="datepicker2" name="checkout" placeholder="Check out">
                         <!-- <input type="text" class="form-control checkout_date" placeholder="Check-out date"> -->
                       </div>
                     </div>
@@ -502,13 +504,13 @@
                           <div class="select-wrap">
                             <!-- <div class="icon"><span class="ion-ios-arrow-down"></span></div> -->
                             <div class="icon"><span class="fa fa-caret-down" role="right-icon"></span></div>
-                              <select name="" id="" class="form-control">
+                              <select id="apartment" name="apartment" class="form-control">
                                 <option value="">Appartamento</option>
-                                <option value="">Profumo</option>
-                                <option value="">Ascolto</option>
-                                <option value="">Sguardo</option>
-                                <option value="">Sfioro</option>
-                                <option value="">Gusto</option>
+                                <option value="1">Profumo</option>
+                                <option value="2">Ascolto</option>
+                                <option value="3">Sguardo</option>
+                                <option value="4">Sfioro</option>
+                                <option value="5">Gusto</option>
                               </select>
                           </div>
                         </div>
@@ -523,14 +525,14 @@
                         <div class="form-field">
                           <div class="select-wrap">
                             <div class="icon"><span class="fa fa-caret-down"></span></div>
-                            <select name="" id="" class="form-control">
+                            <select id="guests" name="guests" class="form-control">
                               <option value="">Numero ospiti</option>
-                              <option value="">1 Person</option>
-                              <option value="">2 People</option>
-                              <option value="">3 People</option>
-                              <option value="">4 People</option>
-                              <option value="">5 People</option>
-                              <option value="">6 People</option>
+                              <option value="1">1 Person</option>
+                              <option value="2">2 People</option>
+                              <option value="3">3 People</option>
+                              <option value="4">4 People</option>
+                              <option value="5">5 People</option>
+                              <option value="6">6 People</option>
                             </select>
                           </div>
                         </div>
@@ -549,9 +551,12 @@
                 <div class="row">
                     <div class="col-xl-2  mg_t_50 btn_align_center"><!-- d-flex py-xl-4 -->
                       <div class="form-group d-flex align-self-stretch">
-                        <a href="#" class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block btn_align_center">
+                        <!-- <a href="#" class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block btn_align_center">
                             <div>Richiedi offerta</div>
-                        </a>
+                        </a> -->
+                        <!-- <input class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block btn_align_center" type="submit" value="Richiedi offerta"> -->
+                        <button type="submit" class="btn button-contactForm boxed-btn d-block align-self-stretch btn_align_center">Richiedi offerta</button>
+
                         <!-- <span><small>Miglior prezzo garantito!</small></span> -->
                       </div>
                     </div>
@@ -829,6 +834,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
         });
     </script> -->
+
+<!-- temporary store form data to use in contact page -->
 
 </body>
 
